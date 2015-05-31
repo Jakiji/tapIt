@@ -141,6 +141,7 @@ angular.module('starter.controllers')
 		$scope.retry = function () {
 			$scope.score = 0;
 			$scope.missed = 20;
+			levels = [20,20,20,20,20];
 			$scope.currentTile = [getRandomInt(0,4), getRandomInt(0,4)];
 			interval = 3000;
 			console.log($scope.currentTile);
