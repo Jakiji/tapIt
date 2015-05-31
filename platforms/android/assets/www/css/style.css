@@ -1,0 +1,351 @@
+/* Empty. Add your own CSS if you like */
+@font-face {
+	font-family: Barkentina;
+	src: url(../fonts/Barkentina.otf);
+}
+
+
+#game {
+	background-color: rgb(68,68,68);
+}
+
+#game ion-content {
+	margin: 0 auto;
+	padding: 10px;
+	width: 520px;
+	text-align: center;
+}
+@media (max-width: 520px) {
+	#game ion-content {
+		width: 300px;
+	}
+}
+
+#logo {
+	width: 30%;
+	display: block;
+	margin: 0 auto;
+}
+@media (max-width: 520px) {
+	#logo {
+		width: 50%;
+	}
+}
+
+.scores {
+	position: relative;
+	display: inline-block;
+	margin-right: 10px;
+	margin-left: 10px;
+	margin-top: 30px;
+	width: 100px;
+	height: 60px;
+	background-color: rgb(150,150,150);
+	border-radius: 20px;
+}
+@media (max-width: 520px) {
+	.scores {
+		margin-right: 2px;
+		margin-left: 11px;
+		margin-top: 17px;
+		width: 70px;
+		height: 50px;
+		border-radius: 11px;
+	}
+}
+
+.title-scores {
+	font-family: Barkentina;
+	font-weight: bold;
+	color: rgb(68,68,68);
+	margin-top: 5px;
+}
+
+.score {
+	font-family: Barkentina;
+	font-size: 30px;
+	margin-top: 4px;
+	color: rgb(68,68,68);
+}
+
+@media (max-width: 520px) {
+	.score {
+		font-size: 20px;
+		margin-top: 0;
+	}
+
+	#missed {
+		font-size: 20px;
+		margin-top: 0;
+	}
+}
+
+#grid {
+	position: relative;
+	margin-top: 30px;
+	width: 500px;
+	height: 500px;
+}
+@media (max-width: 520px) {
+	#grid {
+		width: 280px;
+		height: 280px;
+	}
+}
+
+.tile {
+	position: absolute;
+	width: 80px;
+	height: 80px;
+	border-radius: 50%;
+	background-color: rgb(150,150,150);
+}
+@media (max-width: 520px) {
+	.tile {
+		width: 45px;
+		height: 45px;
+	}
+}
+
+#tile-00 { top: 10px; left : 10px; }
+#tile-01 { top: 10px; left : 110px; }
+#tile-02 { top: 10px; left : 210px; }
+#tile-03 { top: 10px; left : 310px; }
+#tile-04 { top: 10px; left : 410px; }
+
+#tile-10 { top: 110px; left : 10px; }
+#tile-11 { top: 110px; left : 110px; }
+#tile-12 { top: 110px; left : 210px; }
+#tile-13 { top: 110px; left : 310px; }
+#tile-14 { top: 110px; left : 410px; }
+
+#tile-20 { top: 210px; left : 10px; }
+#tile-21 { top: 210px; left : 110px; }
+#tile-22 { top: 210px; left : 210px; }
+#tile-23 { top: 210px; left : 310px; }
+#tile-24 { top: 210px; left : 410px; }
+
+#tile-30 { top: 310px; left : 10px; }
+#tile-31 { top: 310px; left : 110px; }
+#tile-32 { top: 310px; left : 210px; }
+#tile-33 { top: 310px; left : 310px; }
+#tile-34 { top: 310px; left : 410px; }
+
+#tile-40 { top: 410px; left : 10px; }
+#tile-41 { top: 410px; left : 110px; }
+#tile-42 { top: 410px; left : 210px; }
+#tile-43 { top: 410px; left : 310px; }
+#tile-44 { top: 410px; left : 410px; }
+
+@media (max-width: 520px) {
+	#tile-00 { top: 6px; left : 6px; }
+	#tile-01 { top: 6px; left : 62px; }
+	#tile-02 { top: 6px; left : 118px; }
+	#tile-03 { top: 6px; left : 174px; }
+	#tile-04 { top: 6px; left : 230px; }
+
+	#tile-10 { top: 62px; left : 6px; }
+	#tile-11 { top: 62px; left : 62px; }
+	#tile-12 { top: 62px; left : 118px; }
+	#tile-13 { top: 62px; left : 174px; }
+	#tile-14 { top: 62px; left : 230px; }
+
+	#tile-20 { top: 118px; left : 6px; }
+	#tile-21 { top: 118px; left : 62px; }
+	#tile-22 { top: 118px; left : 118px; }
+	#tile-23 { top: 118px; left : 174px; }
+	#tile-24 { top: 118px; left : 230px; }
+
+	#tile-30 { top: 174px; left : 6px; }
+	#tile-31 { top: 174px; left : 62px; }
+	#tile-32 { top: 174px; left : 118px; }
+	#tile-33 { top: 174px; left : 174px; }
+	#tile-34 { top: 174px; left : 230px; }
+
+	#tile-40 { top: 230px; left : 6px; }
+	#tile-41 { top: 230px; left : 62px; }
+	#tile-42 { top: 230px; left : 118px; }
+	#tile-43 { top: 230px; left : 174px; }
+	#tile-44 { top: 230px; left : 230px; }
+}
+
+#bar-bottom {
+	position: absolute;
+	bottom: 0;
+	left: 5px;
+	width: 90px;
+	height: 2px;
+	background-color: rgb(255,242,0);
+	border-radius: 1px;
+	 -webkit-transition: left 0.1s ease;
+        -moz-transition: left 0.1s ease;
+         -ms-transition: left 0.1s ease;
+          -o-transition: left 0.1s ease;
+             transition: left 0.1s ease;
+}
+
+#bar-right {
+	position: absolute;
+	right: 0;
+	top: 5px;
+	height: 90px;
+	width: 2px;
+	background-color: rgb(255,242,0);
+	border-radius: 1px;
+	 -webkit-transition: top 0.1s ease;
+        -moz-transition: top 0.1s ease;
+         -ms-transition: top 0.1s ease;
+          -o-transition: top 0.1s ease;
+             transition: top 0.1s ease;
+}
+
+#bar-top {
+	position: absolute;
+	top: 0;
+	left: 5px;
+	width: 90px;
+	height: 2px;
+	background-color: rgb(255,242,0);
+	border-radius: 1px;
+	 -webkit-transition: left 0.1s ease;
+        -moz-transition: left 0.1s ease;
+         -ms-transition: left 0.1s ease;
+          -o-transition: left 0.1s ease;
+             transition: left 0.1s ease;
+}
+
+#bar-left {
+	position: absolute;
+	left: 0;
+	top: 5px;
+	height: 90px;
+	width: 2px;
+	background-color: rgb(255,242,0);
+	border-radius: 1px;
+	 -webkit-transition: top 0.1s ease;
+        -moz-transition: top 0.1s ease;
+         -ms-transition: top 0.1s ease;
+          -o-transition: top 0.1s ease;
+             transition: top 0.1s ease;
+}
+
+@media (max-width: 520px) {
+	#bar-bottom {
+		width: 46px;
+	}
+
+	#bar-right {
+		height: 46px;
+	}
+
+	#bar-top {
+		width: 46px;
+	}
+
+	#bar-left {
+		height: 46px;
+	}
+}
+
+#tuto {
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	background-color: rgb(68, 68, 68);
+	z-index: 1;
+}
+
+#tuto #explanation {
+	width: 100%;
+	text-align: center;
+	font-family: Barkentina;
+	font-size: 20px;
+	line-height: 50px;
+	color: rgb(150,150,150);
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+
+#play {
+	position: absolute;
+	bottom: 90px;
+	right: 100px;
+	border: 1px solid rgb(255,242,0);
+	padding-top: 2px;
+	padding-right: 10px;
+	padding-left: 10px;
+	padding-bottom: 2px;
+	border-radius: 4px;
+	color: rgb(255, 242, 0);
+	cursor: pointer;
+}
+
+@media (max-width: 520px) {
+	#tuto #explanation {
+		line-height: 30px;
+		font-size: 15px;
+		margin-bottom: 20px;
+	}
+
+	#play {
+		bottom: 20px;
+		right: 20px;
+	}
+}
+
+.hide {
+	display: none;
+}
+
+#end {
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	background-color: rgb(68, 68, 68);
+	z-index: 1;
+}
+
+#retry {
+	position: absolute;
+	bottom: 200px;
+	right: 200px;
+	width: 100px;
+	height: 100px;
+	border: 1px solid rgb(255,242,0);
+	border-radius: 50%;
+	color: rgb(255, 242, 0);
+	cursor: pointer;
+	font-family: Barkentina;
+	font-weight: bold;
+	font-size: 15px;
+	padding-top: 20px;
+	text-align: center;
+}
+
+@media (max-width: 520px) {
+	#retry {
+		right: 90px;
+		bottom: 20px;
+	}
+}
+
+#retry i {
+	font-size: 50px;
+}
+
+#end #end-text {
+	font-family: Barkentina;
+	color: rgb(150,150,150);
+	font-size: 40px;
+}
+
+#end #final-score {
+	font-family: Barkentina;
+	font-size: 100px;
+	color: rgb(150, 150, 150);
+	margin-top: 60px;
+}
