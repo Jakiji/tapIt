@@ -18,7 +18,7 @@ angular.module('starter.controllers')
 		}
 		var interval = 3000;
 		var promise;
-		var levels = [20,20,20,20,20]
+		var levels = [10,10,10,10,10]
 
 		function getRandomInt(min, max) {
 		    return Math.floor(Math.random() * (max - min + 1)) + min;
@@ -141,7 +141,7 @@ angular.module('starter.controllers')
 		$scope.retry = function () {
 			$scope.score = 0;
 			$scope.missed = 20;
-			levels = [20,20,20,20,20];
+			levels = [10,10,10,10,10];
 			$scope.currentTile = [getRandomInt(0,4), getRandomInt(0,4)];
 			interval = 3000;
 			console.log($scope.currentTile);
